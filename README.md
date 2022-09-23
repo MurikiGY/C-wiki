@@ -13,9 +13,9 @@ OBS: Algumas bibliotecas como math.h necessitam de flags de compilação
 # A função Main
 Função onde ocorre a principal execução.
 EX:
-
+```
 int main(){
 
    return 0;
 }
-
+```
