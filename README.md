@@ -1,6 +1,7 @@
 # C-wiki
 
 # índice
+- [Importação de bibliotecas](#importaçãodebibliotecas)
 - [Compilação](#compilação)
 
 
