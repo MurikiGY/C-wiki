@@ -1,10 +1,10 @@
 # C-wiki
 
 # índice
-- [Importação de bibliotecas](#a função Main)
+- [Compilação](#compilação)
 
 
-# Importação de bibliotecas:
+## Importação de bibliotecas:
 Para importar uma biblioteca em c, basta inserir no inicio do arquivo.
 EX:
 ```
@@ -43,12 +43,12 @@ Na função main é possivel realizar a passagem de parametros com o terminal co
 
 
 
-# Compilação
+## Compilação
 
 ### Sistema Make
 
 
 
-# Arquivos de cabeçalho (Headers)
+## Arquivos de cabeçalho (Headers)
 
 
