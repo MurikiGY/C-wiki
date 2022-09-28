@@ -2,6 +2,7 @@
 
 # índice
 - [Importação de bibliotecas](#importaçãodebibliotecas)
+- [Função Main](#afunçãomain)
 - [Compilação](#compilação)
 
 
