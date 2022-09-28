@@ -1,6 +1,6 @@
 # C-wiki
 
-# Importação de blibliotecas:
+# Importação de bibliotecas:
 Para importar uma biblioteca em c, basta inserir no inicio do arquivo.
 EX:
 ```
