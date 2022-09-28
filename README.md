@@ -17,7 +17,7 @@ OBS: Algumas bibliotecas como math.h necessitam de flags de compilação
 
 
 
-# A função Main
+## A função Main
 Função onde ocorre toda a execução do programa.
 Exemplos:
 ```
