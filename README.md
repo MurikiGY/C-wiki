@@ -34,3 +34,7 @@ echo $?
 
 - Passagem de parametros na execução do terminal:
 Na função main é possivel realizar a passagem de parametros com o terminal com os argumentos argc e argv.
+
+# Compilação
+
+- Sistema Make
