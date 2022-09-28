@@ -1,7 +1,7 @@
 # C-wiki
 
-#índice
-- [Importação de bibliotecas](A função Main)
+# índice
+- [Importação de bibliotecas](#A função Main)
 
 
 # Importação de bibliotecas:
