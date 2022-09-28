@@ -1,5 +1,9 @@
 # C-wiki
 
+#índice
+- [Importação de bibliotecas](A função Main)
+
+
 # Importação de bibliotecas:
 Para importar uma biblioteca em c, basta inserir no inicio do arquivo.
 EX:
@@ -10,6 +14,8 @@ EX:
 ```
 
 OBS: Algumas bibliotecas como math.h necessitam de flags de compilação
+
+
 
 # A função Main
 Função onde ocorre toda a execução do programa.
@@ -35,6 +41,14 @@ echo $?
 ### Passagem de parametros na execução do terminal:
 Na função main é possivel realizar a passagem de parametros com o terminal com os argumentos argc e argv.
 
+
+
 # Compilação
 
 ### Sistema Make
+
+
+
+# Arquivos de cabeçalho (Headers)
+
+
