@@ -1,10 +1,10 @@
 # C-wiki
 
 # índice
-- [Importação de bibliotecas](#importaçãodebibliotecas)
-- [Função Main](#afunçãomain)
+- [Importação de bibliotecas](#importação-de-bibliotecas)
+- [Função Main](#a-função-main)
 - [Compilação](#compilação)
-
+- [Headers](#Arquivos-d-cabeçalho-\(Headers\))
 
 ## Importação de bibliotecas:
 Para importar uma biblioteca em c, basta inserir no inicio do arquivo.
