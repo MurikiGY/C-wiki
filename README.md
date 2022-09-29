@@ -4,7 +4,7 @@
 - [Importação de bibliotecas](#importação-de-bibliotecas)
 - [Função Main](#a-função-main)
 - [Compilação](#compilação)
-- [Headers](#Arquivos-d-cabeçalho-\(Headers\))
+- [Headers](#Arquivos-de-cabeçalho-\(Headers\))
 
 ## Importação de bibliotecas:
 Para importar uma biblioteca em c, basta inserir no inicio do arquivo.
