@@ -19,23 +19,30 @@ OBS: Algumas bibliotecas como math.h necessitam de flags de compilação
 
 
 
+## Compilação
+### Sistema Make
+
+
+
+## Arquivos de cabeçalho (Headers)
+
+
+
+
 ## A função Main
 Função onde ocorre toda a execução do programa.
 Exemplo:
-
 ```
 int main(){
 
    return 0;
 }
 ```
-
 ### Retorno para o sistema:
 O codigo ```return 0``` serve para responder ao sistema que a execução do programa foi um sucesso. Para testar, execute no terminal depois do programa terminar:
 ```
 echo $?
 ```
-
 ### Passagem de parametros na execução do terminal:
 Na função main é possivel realizar a passagem de parametros pela execução com os argumentos argc e argv.
 ```
@@ -48,7 +55,6 @@ int main(int argc, char **argv){
 
 
 ## Condicionais
-
 ### if-else
 Com a estrutura if-else é possivel criar condições na execução. Exemplos:
 ```
@@ -80,19 +86,23 @@ else
    command3;
 ```
 Observações:
-- Como a cláusula else fecha um if, ele sempre corresponderá ao ultimo if correspondente, a não ser que seja utilizado chaves ({..}) para fechamento do código em blocos
-
+- Como a cláusula else fecha um if, ele sempre corresponderá a última ocorrencia de um if, a não ser que seja utilizado chaves ({..}) para fechamento do código em blocos.
 
 ### switch-case
 
 
-
-## Compilação
-
-### Sistema Make
+## Loops
 
 
 
-## Arquivos de cabeçalho (Headers)
+
+## Strings
+### Leitura da entrada padrão
+
+### Escrita na saída padrão
+
+### Leitura de arquivos
+
+### Escrita em arquivos
 
 
