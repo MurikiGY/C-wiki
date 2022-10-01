@@ -122,12 +122,19 @@ Em C é possivel realizar operações em diretórios.
 #include <sys/types.h>
 int mkdir (const char *filename, mode_t mode)
 ```
+OBS:
+
+- mkdir retorna 0 para sucesso e -1 para falha.
+
+- filename representa o caminho relativo com o nome do diretório a ser criado.
+
+- mode representa as permissões que o diretório possuirá, por exemplo 0777 (0 é a representação em octal e 7 é a permissão de ler, escrever e executar).
 
 ### Remoção de diretórios (vazios)
 ```
 ```
 
-### Abertura da stream de diretorios
+### Abertura da stream de diretórios
 Para abrir uma stream de 
 
 
@@ -189,3 +196,5 @@ Observações:
 [Wiki do professor](http://wiki.inf.ufpr.br/maziero/doku.php?id=prog2:start)
 
 - [http://www.dpi.inpe.br/~carlos/Academicos/Cursos/LinguagemC/Cap_11.html](http://www.dpi.inpe.br/~carlos/Academicos/Cursos/LinguagemC/Cap_11.html)
+
+- [Permissões 0777 vs 777](https://digitalfortress.tech/php/difference-file-mode-0777-vs-777/)
