@@ -68,7 +68,7 @@ Também é possivel realizar o teste de parametros na chamada de execução com 
 #include <unistd.h>
 
 int option;
-while( (option = getopt(argc, argv, "abc:")) != -1)
+while( (option = getopt(argc, argv, "a\bc:")) != -1)
    switch(option){
       case 'a':
          command1;
