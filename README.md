@@ -45,13 +45,12 @@ int main(int argc, char **argv){
 Onde argc é um inteiro com o número de parâmetros passados e argv é um vetor de strings que guarda os parâmetros passados. Exemplo:
 ```
 ./a.out -a teste
-
-//argc conterá o valor 5
-//argv será um vetor, onde:
-//argv[0] == ./a.out
-//argv[1] == -a
-//argv[2] == teste
 ```
+- argc conterá o valor 5
+- argv será um vetor, onde:
+- argv[0] == ./a.out
+- argv[1] == -a
+- argv[2] == teste
 
 Também é possivel realizar o teste de parametros na chamada de execução com ./ conforme se segue:
 ```
@@ -153,7 +152,7 @@ int main (){
 ```
 
 ### Abertura da stream de diretórios
-Para abrir uma stream de 
+Diretórios são abertos através de streams de tipo DIR*, definido em <dirent.h>. Os programas não devem alocar variáveis desse tipo, apenas ponteiros para variáveis alocadas pela biblioteca.
 
 
 
