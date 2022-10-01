@@ -19,16 +19,6 @@ OBS: Algumas bibliotecas como math.h necessitam de flags de compilação
 
 
 
-//## Compilação
-//### Sistema Make
-
-
-
-//## Arquivos de cabeçalho (Headers)
-
-
-
-
 ## A função Main
 Função onde ocorre toda a execução do programa.
 Exemplo:
