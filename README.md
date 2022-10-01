@@ -114,14 +114,25 @@ OBS:
 
 
 ## Operações em diretórios
-Em C é possivel realizar operações em diretórios.
+Em C é possivel criar, excluir ou alterar diretórios.
 
 ### Criação de diretórios
 ```
 #include <sys/stat.h>
 #include <sys/types.h>
-int mkdir (const char *filename, mode_t mode)
+
+mkdir (const char *filename, mode_t mode)
 ```
+
+Exemplo:
+```
+#include <sys/stat.h>
+#include <sys/types.h>
+
+int main (){
+
+```
+
 OBS:
 
 - mkdir retorna 0 para sucesso e -1 para falha.
@@ -131,7 +142,17 @@ OBS:
 - mode representa as permissões que o diretório possuirá, por exemplo 0777 (0 é a representação em octal e 7 é a permissão de ler, escrever e executar).
 
 ### Remoção de diretórios (vazios)
+De maneira semelhante a criação de arquivos: 
 ```
+int main (){
+    int err;   //Saida de erro
+
+    err = rmdir(nome);
+    if (err == -1){
+        perror("rmdir");
+        exit(1);
+    }
+}
 ```
 
 ### Abertura da stream de diretórios
