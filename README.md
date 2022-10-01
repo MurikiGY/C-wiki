@@ -19,12 +19,12 @@ OBS: Algumas bibliotecas como math.h necessitam de flags de compilação
 
 
 
-## Compilação
-### Sistema Make
+//## Compilação
+//### Sistema Make
 
 
 
-## Arquivos de cabeçalho (Headers)
+//## Arquivos de cabeçalho (Headers)
 
 
 
