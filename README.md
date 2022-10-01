@@ -74,9 +74,29 @@ while( (option = getopt(argc, argv, "abc:")) != -1)
 ```
 Onde na execução ./a.out é possivel passar os parametros -a, -b e -c.
 
-OBS: Quando há o caracter de dois pontos ':' na string de passagem de parâmetros de getopt, entende-se que o parâmetro acompanhará um valor, podendo ser um inteiro ou uma string. Neste exemplo espera-se que sempre que houver a chamada de execução com -c, logo em seguida haverá um valor que será armazenado na variavel global "optarg".
+OBS:
+
+- Quando há o caracter de dois pontos ':' na string de passagem de parâmetros de getopt, entende-se que o parâmetro acompanhará um valor, podendo ser um inteiro ou uma string. Neste exemplo espera-se que sempre que houver a chamada de execução com -c, logo em seguida haverá um valor que será armazenado na variavel global "optarg".
 ```
 ./a.out -c <vallue>
+```
+
+- Quando há mais de um parâmatro com dois pontos ("a:b:c:") a variável optarg conterá o valor do parâmetro de acordo com o switch case. Por exemplo, imagine uma chamada de execução ```./a.out -a <valor_a> -b <valor_b> -c <valor_c>
+```
+   switch(option){
+      case 'a':
+         command1;   //Aqui, optarg conterá o valor <valor_a>
+         command2;
+      case 'b':
+         command1;   //Aqui, optarg conterá o valor <valor_b>
+         command2;
+      case 'c':
+         command1;   //Aqui, optarg conterá o valor <valor_c>
+         command2;
+      default:
+         fprintf (stderr, "Usage: %s -a -b -c value\n", argv[0]);
+         exit(1);
+    }
 ```
 
 
