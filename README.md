@@ -44,13 +44,25 @@ O codigo ```return 0``` serve para responder ao sistema que a execução do prog
 echo $?
 ```
 ### Passagem de parametros na execução do terminal:
-Na função main é possivel realizar a passagem de parametros pela execução com os argumentos argc e argv.
+Na função main também é possivel realizar a passagem de parametros pela execução com os argumentos argc e argv.
 ```
 int main(int argc, char **argv){
 
    return 0;
 }
 ```
+
+Onde argc é um inteiro com o número de parâmetros passados e argv é um vetor de strings que guarda os parâmetros passados. Exemplo:
+```
+./a.out -a teste
+
+//argc conterá o valor 5
+//argv será um vetor, onde:
+//argv[0] == ./a.out
+//argv[1] == -a
+//argv[2] == teste
+```
+
 Também é possivel realizar o teste de parametros na chamada de execução com ./ conforme se segue:
 ```
 #include <unistd.h>
