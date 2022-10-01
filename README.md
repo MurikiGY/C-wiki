@@ -153,7 +153,17 @@ int main (){
 
 ### Abertura da stream de diretórios
 Diretórios são abertos através de streams de tipo DIR*, definido em <dirent.h>. Os programas não devem alocar variáveis desse tipo, apenas ponteiros para variáveis alocadas pela biblioteca.
+Exemplo de abertura de uma stream:
+```
+int main (){
+    DIR * dirstream;
 
+    dirstream = opendir(const char <pathtodir>);
+    if (!dirstream){
+        perror("Não foi possivel acesssar o diretorio\n");
+        exit(2);
+    }
+```
 
 
 
