@@ -80,6 +80,13 @@ OBS: Quando há o caracter de dois pontos ':' na string de passagem de parâmetr
 ```
 
 
+
+## Abertura de arquivos e diretórios
+
+
+
+
+
 ## Condicionais
 ### if-else
 Com a estrutura if-else é possivel criar condições na execução. Exemplos:
