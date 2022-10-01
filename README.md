@@ -113,8 +113,22 @@ OBS:
 
 
 
-## Abertura de arquivos e diretórios
+## Operações em diretórios
+Em C é possivel realizar operações em diretórios.
 
+### Criação de diretórios
+```
+#include <sys/stat.h>
+#include <sys/types.h>
+int mkdir (const char *filename, mode_t mode)
+```
+
+### Remoção de diretórios (vazios)
+```
+```
+
+### Abertura da stream de diretorios
+Para abrir uma stream de 
 
 
 
@@ -170,4 +184,8 @@ Observações:
 
 ### Escrita em arquivos
 
+## Bibliografia
+- Material da WIKI de programação do professor Carlos Maziero, professor da UFPR.
+[Wiki do professor](http://wiki.inf.ufpr.br/maziero/doku.php?id=prog2:start)
 
+- [http://www.dpi.inpe.br/~carlos/Academicos/Cursos/LinguagemC/Cap_11.html](http://www.dpi.inpe.br/~carlos/Academicos/Cursos/LinguagemC/Cap_11.html)
