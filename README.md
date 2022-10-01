@@ -120,7 +120,14 @@ Exemplo:
 #include <sys/types.h>
 
 int main (){
+    int err;   //Saida de erro
 
+    err = mkdir(nome, 0777);
+    if (err == -1){
+        perror("mkdir");
+        exit(1);
+    }
+}
 ```
 
 OBS:
