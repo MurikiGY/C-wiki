@@ -83,7 +83,7 @@ OBS:
 ./a.out -c <vallue>
 ```
 
-- Quando há mais de um parâmatro com dois pontos ```("a:b:c:")``` a variável optarg conterá o valor do parâmetro de acordo com o switch case. Por exemplo, imagine uma chamada de execução ```./a.out -a <valor_a> -b <valor_b> -c <valor_c>
+- Quando há mais de um parâmatro com dois pontos ```("a:b:c:")``` a variável optarg conterá o valor do parâmetro de acordo com o switch case. Por exemplo, imagine uma chamada de execução ```./a.out -a <valor_a> -b <valor_b> -c <valor_c>```
 ```
    switch(option){
       case 'a':
