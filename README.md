@@ -52,7 +52,7 @@ Onde argc é um inteiro com o número de parâmetros passados e argv é um vetor
 - argv[1] == -a
 - argv[2] == teste
 
-Também é possivel realizar o teste de parametros na chamada de execução com ./ conforme se segue:
+Para evitar falhas de segmentação também é aconselhavel realizar o teste de parametros na chamada de execução com a função getopt conforme se segue:
 ```
 #include <unistd.h>
 
