@@ -216,6 +216,7 @@ Para criar uma resposta de execução de programa interessante basta utilizar o 
       ...
     }
 ```
+Onde o ```\r``` irá fazer com que o pontador pontador retorne para o inicio da linha.
 
 
 
