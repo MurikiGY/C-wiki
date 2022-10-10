@@ -201,7 +201,22 @@ else
 Observações:
 - Como a cláusula else fecha um if, ele sempre corresponderá a última ocorrencia de um if, a não ser que seja utilizado chaves ({..}) para fechamento do código em blocos.
 
+
+
 ### switch-case
+
+
+
+### Resposta de execução
+Para criar uma resposta de execução de programa interessante basta utilizar o seguinte código:
+```
+    while(conditional){
+      printf("\rExecutando instruções");
+      fflush(stdout);
+      ...
+    }
+```
+
 
 
 ## Loops
@@ -213,6 +228,7 @@ Observações:
 ### Leitura da entrada padrão
 
 ### Escrita na saída padrão
+
 
 ### Leitura de arquivos
 
