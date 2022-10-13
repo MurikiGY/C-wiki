@@ -262,7 +262,7 @@ Menor que 0: O primeiro elemento precede o segundo pelo critério estabelecido
 
 Igual a 0: Os dos elementos são iguais
 
-Maior que 0: O primeiro elemento suceder o segundo pelo critério estabelecido
+Maior que 0: O primeiro elemento sucede o segundo pelo critério estabelecido
 
 Exemplos de uso:
 - Exemplo 1
