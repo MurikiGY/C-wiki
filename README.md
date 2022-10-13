@@ -246,13 +246,20 @@ Uma das formas de utilizar o Quick Sort em C é por meio da função:
 ```
 #include <stdlib.h>
 
+static int compar(const void *p1, const void *p2){
+    return strcmp(*(const char **) p1, *(const char **) p2);
+}
+
 void qsort(void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *))
 ```
 Onde:
 - *Base: Ponteiro para o primeiro elemento do vetor
 - nmemb: Numero de elementos do vetor
 - size:  Tamanho em bytes de um elemento do vetor (Normalmente utilizado com sizeof(tipo))
-- (*compar)(const void *, const void *): Função de comparação entre os elementos
+- (*compar)(const void *, const void *): Função de comparação entre os elementos retornando um valor inteiro, onde:
+Menor que 0: O primeiro elemento precede o segundo pelo critério estabelecido
+Igual a 0: Os dos elementos são iguais
+Maior que 0: O primeiro elemento suceder o segundo pelo critério estabelecido
 
 Exemplos de uso:
 - Exemplo 1
