@@ -201,13 +201,11 @@ else
 Observações:
 - Como a cláusula else fecha um if, ele sempre corresponderá a última ocorrencia de um if, a não ser que seja utilizado chaves ({..}) para fechamento do código em blocos.
 
-
-
 ### switch-case
 
 
 
-### Resposta de execução
+## Resposta de execução
 Para criar uma resposta de execução de programa interessante basta utilizar o seguinte código:
 ```
     while(conditional){
@@ -226,14 +224,99 @@ Onde o ```\r``` irá fazer com que o pontador pontador retorne para o inicio da 
 
 
 ## Strings
+
+
+
+## Streams
 ### Leitura da entrada padrão
 
 ### Escrita na saída padrão
 
-
 ### Leitura de arquivos
 
 ### Escrita em arquivos
+
+
+
+## Algoritmos
+A seguir alguns dos algoritmos mais usados em programas
+
+### Quick sort
+Uma das formas de utilizar o Quick Sort em C é por meio da função:
+```
+#include <stdlib.h>
+
+void qsort(void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *))
+```
+Onde:
+- *Base: Ponteiro para o primeiro elemento do vetor
+- nmemb: Numero de elementos do vetor
+- size:  Tamanho em bytes de um elemento do vetor (Normalmente utilizado com sizeof(tipo))
+- (*compar)(const void *, const void *): Função de comparação entre os elementos
+
+Exemplos de uso:
+- Exemplo 1
+```
+#include <stdlib.h>
+
+struct print {
+    int chave;
+    int index;
+    int table;
+};
+typedef struct print print_t;
+
+static int compare(const void *p1, const void *p2){
+    return strcmp(p1, p2);
+}
+
+int main(){
+    int j = <size>;
+    print_t dataArr[j];
+
+    ...
+
+    qsort(dataArr, j, sizeof(print_t), compare);
+
+    return 0;
+}
+```
+OBS: Como não fora especificado na funcao ```compare``` qual variavel ordenar, a primeira variavel da estrutura é escolhida por padrão(int chave).
+
+- Exemplo 2
+```
+#include <stdlib.h>
+
+struct log {
+    char   *Nome;
+    char   *Data;
+    int    distancia;
+    int    velMedia;
+    int    velMax;
+    int    hrMedio;
+    int    hrMax;
+    int    cadMedia;
+    int    subAcumulada;
+};
+typedef struct log log_t;
+
+static int cmpstring(const void *p1, const void *p2){
+    const log_t *a = p1;
+    const log_t *b = p2;
+    return strcmp(a->Nome, b->Nome);
+}
+
+int main (){
+    int logTam = <size>;
+    log_t vLog[logTam];
+
+    qsort(vLog, logTam, sizeof(log_t), cmpstring);
+
+    return 0;
+}
+```
+
+
 
 ## Bibliografia
 - Material da WIKI de programação do professor Carlos Maziero, professor da UFPR.
@@ -242,3 +325,5 @@ Onde o ```\r``` irá fazer com que o pontador pontador retorne para o inicio da 
 - [http://www.dpi.inpe.br/~carlos/Academicos/Cursos/LinguagemC/Cap_11.html](http://www.dpi.inpe.br/~carlos/Academicos/Cursos/LinguagemC/Cap_11.html)
 
 - [Permissões 0777 vs 777](https://digitalfortress.tech/php/difference-file-mode-0777-vs-777/)
+
+- [Rotinas de ordenação em C](https://www.dca.fee.unicamp.br/cursos/EA876/apostila/HTML/node25.html)
