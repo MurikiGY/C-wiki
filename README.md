@@ -238,8 +238,10 @@ Onde o ```\r``` irá fazer com que o pontador pontador retorne para o inicio da 
 
 
 
+
 ## Algoritmos
 A seguir alguns dos algoritmos mais usados em programas
+
 
 ### Quick sort
 Uma das formas de utilizar o Quick Sort em C é por meio da função:
@@ -277,7 +279,7 @@ struct print {
 typedef struct print print_t;
 
 static int compare(const void *p1, const void *p2){
-    return strcmp(p1, p2);
+    return (((print_t *)p1)->chave - ((print_t *)p2)->chave);
 }
 
 int main(){
@@ -291,7 +293,6 @@ int main(){
     return 0;
 }
 ```
-OBS: Como não fora especificado na funcao ```compare``` qual variavel ordenar, a primeira variavel da estrutura é escolhida por padrão(int chave).
 
 - Exemplo 2
 ```
@@ -311,14 +312,14 @@ struct log {
 typedef struct log log_t;
 
 static int cmpstring(const void *p1, const void *p2){
-    const log_t *a = p1;
-    const log_t *b = p2;
-    return strcmp(a->Nome, b->Nome);
+    return strcmp(((log_t *)p1)->Nome, ((log_t *)p2)->Nome);
 }
 
 int main (){
     int logTam = <size>;
-    log_t vLog[logTam];
+    log_t vLog[logTam]
+
+    ...
 
     qsort(vLog, logTam, sizeof(log_t), cmpstring);
 
