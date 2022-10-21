@@ -226,6 +226,15 @@ Onde o ```\r``` irá fazer com que o pontador pontador retorne para o inicio da 
 
 ## Strings
 Em C, strings são implementadas como vetores de caracteres (tipo char) terminados pelo caractere especial '\0' (caractere cujo código numérico é zero). Esse caractere terminal é considerado no tamanho do vetor. As aspas duplas (“…”) são usadas para declarar strings constantes.
+```
+scanf("...", &var);           //Le valores até um \n, espaço ou tabulação
+fscanf(stream, "...", &var);  //Le valores até um \n, espaço ou tabulação
+fgets(stream, "...", &var);   //Le valores até encontrar um \n e insere o \n na string
+```
+
+
+
+
 
 
 
